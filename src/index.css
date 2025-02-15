@@ -1,1 +1,8 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Figtree:wght@300..900&display=swap');
 @import "tailwindcss";
+
+@theme {
+    --font-script: "Dancing Script", serif;
+    --font-figtree: "Figtree", serif;
+  }
