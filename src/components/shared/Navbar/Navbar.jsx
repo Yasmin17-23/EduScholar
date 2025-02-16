@@ -14,7 +14,7 @@ const Navbar = () => {
             <div className="flex items-center md:gap-0">
               <Link>
                 <img
-                  src="https://i.ibb.co.com/zHb479zs/logo.png"
+                  src="https://i.ibb.co.com/VWnPQz0w/logo.png"
                   alt="logo"
                   width="100px"
                   height="100px"
