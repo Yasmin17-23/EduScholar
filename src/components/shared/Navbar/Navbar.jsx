@@ -62,13 +62,13 @@ const Navbar = () => {
                     </Link>
 
                     <Link
-                      to="/"
+                      to="/login"
                       className=" px-4 py-3 hover:bg-amber-800/40 hover:text-white transition font-semibold"
                     >
                       Login
                     </Link>
                     <Link
-                      to="/"
+                      to="/signup"
                       className=" px-4 py-3 hover:bg-amber-800/40 hover:text-white transition font-semibold"
                     >
                       Signup
