@@ -11,7 +11,7 @@ const LoadingSpinner = ({ smallHeight }) => {
     justify-center 
     items-center `}
   >
-    <BounceLoader size={100} color='red' />
+    <BounceLoader size={60} color='red' />
   </div>
   )
 }

@@ -1,0 +1,81 @@
+[
+    {
+      "university_name": "Global Tech University",
+      "university_image": "https://i.ibb.co.com/LFS53Y5/GUST-Building.jpg",
+      "scholarship_category": "Merit-Based",
+      "university_location": {
+        "country": "USA",
+        "city": "New York"
+      },
+      "application_deadline": "2025-06-30",
+      "subject_category": "Computer Science & Engineering",
+      "application_fees": 50,
+      "rating": 4.5
+    },
+    {
+      "university_name": "European Business Academy",
+      "university_image": "https://i.ibb.co.com/dJ1VKp7m/european-university-img.jpg",
+      "scholarship_category": "Need-Based",
+      "university_location": {
+        "country": "Germany",
+        "city": "Berlin"
+      },
+      "application_deadline": "2025-07-15",
+      "subject_category": "Business Administration",
+      "application_fees": 75,
+      "rating": 4.3
+    },
+    {
+      "university_name": "Asian Institute of Technology",
+      "university_image": "https://i.ibb.co.com/JFm6KRYy/asian-institute-img.jpg",
+      "scholarship_category": "Research Grant",
+      "university_location": {
+        "country": "Thailand",
+        "city": "Bangkok"
+      },
+      "application_deadline": "2025-05-20",
+      "subject_category": "Environmental Science",
+      "application_fees": 30,
+      "rating": 4.6
+    },
+    {
+      "university_name": "Royal Canadian University",
+      "university_image": "https://i.ibb.co.com/k2vPt9mG/royal-university-img.jpg",
+      "scholarship_category": "Full-Ride",
+      "university_location": {
+        "country": "Canada",
+        "city": "Toronto"
+      },
+      "application_deadline": "2025-08-10",
+      "subject_category": "Engineering",
+      "application_fees": 100,
+      "rating": 4.7
+    },
+    {
+      "university_name": "Oceania Global University",
+      "university_image": "https://i.ibb.co.com/Nd5gSGBr/oceania-global-university-img.jpg",
+      "scholarship_category": "Athletic Scholarship",
+      "university_location": {
+        "country": "Australia",
+        "city": "Sydney"
+      },
+      "application_deadline": "2025-09-01",
+      "subject_category": "Sports Science",
+      "application_fees": 40,
+      "rating": 4.4
+    },
+    {
+      "university_name": "Middle East Science Institute",
+      "university_image": "https://i.ibb.co.com/nNBP4Gg4/middle-east-university-img.jpg",
+      "scholarship_category": "Diversity Scholarship",
+      "university_location": {
+        "country": "UAE",
+        "city": "Dubai"
+      },
+      "application_deadline": "2025-06-15",
+      "subject_category": "Artificial Intelligence",
+      "application_fees": 60,
+      "rating": 4.8
+    }
+  ]
+  

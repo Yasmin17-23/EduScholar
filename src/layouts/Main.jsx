@@ -6,7 +6,7 @@ import Footer from "../components/shared/Footer/Footer"
 const Main = () => {
   return (
     <div className="font-figtree">
-        <div  className="max-w-7xl mx-auto  md:py-8">
+        <div  className="max-w-7xl  mx-auto sm:px-6  md:py-8">
         <Navbar/>
         <div className="min-h-[calc(100vh-275.06px)]">
         <Outlet></Outlet>
