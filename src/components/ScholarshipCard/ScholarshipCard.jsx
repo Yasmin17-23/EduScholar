@@ -27,6 +27,7 @@ const ScholarshipCard = ({ scholarship }) => {
               </button>
             </Link>
         </div>
+       
     </div>
   )
 }

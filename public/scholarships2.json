@@ -1,0 +1,105 @@
+[
+    {
+      "university_name": "Global Tech University",
+      "university_image": "https://i.ibb.co.com/LFS53Y5/GUST-Building.jpg",
+      "scholarship_category": "Merit-based",
+      "university_location": {
+        "country": "USA",
+        "city": "New York"
+      },
+      "application_deadline": "2025-05-01",
+      "subject_category": "Computer Science",
+      "application_fees": 50,
+      "rating": 4.5,
+      "scholarship_description": "Global Tech University offers merit-based scholarships for students pursuing computer science degrees. This scholarship is awarded based on academic excellence and innovation.",
+      "stipend": 1000,
+      "postDate": "2025-02-10",
+      "service_charge": 20
+    },
+    {
+      "university_name": "Greenfield University",
+      "university_image": "https://i.ibb.co.com/dJ1VKp7m/european-university-img.jpg",
+      "scholarship_category": "Need-based",
+      "university_location": {
+        "country": "UK",
+        "city": "London"
+      },
+      "application_deadline": "2025-06-30",
+      "subject_category": "Engineering",
+      "application_fees": 30,
+      "rating": 4.3,
+      "scholarship_description": "Greenfield University provides need-based scholarships to help underprivileged students pursue engineering degrees. The scholarship supports tuition and study materials.",
+      "stipend": 800,
+      "postDate": "2025-02-15",
+      "service_charge": 15
+    },
+    {
+      "university_name": "Oceanic University",
+      "university_image": "https://i.ibb.co.com/JFm6KRYy/asian-institute-img.jpg",
+      "scholarship_category": "Athletic",
+      "university_location": {
+        "country": "Australia",
+        "city": "Sydney"
+      },
+      "application_deadline": "2025-07-15",
+      "subject_category": "Sports Science",
+      "application_fees": 40,
+      "rating": 4.7,
+      "scholarship_description": "Oceanic University offers athletic scholarships to students excelling in sports. These scholarships are designed for students pursuing degrees in sports science or related fields.",
+      "stipend": 1200,
+      "postDate": "2025-02-18",
+      "service_charge": 10
+    },
+    {
+      "university_name": "Riverstone College",
+      "university_image": "https://i.ibb.co.com/k2vPt9mG/royal-university-img.jpg",
+      "scholarship_category": "Diversity",
+      "university_location": {
+        "country": "Canada",
+        "city": "Vancouver"
+      },
+      "application_deadline": "2025-08-01",
+      "subject_category": "Social Sciences",
+      "application_fees": 60,
+      "rating": 4.2,
+      "scholarship_description": "The Diversity Scholarship at Riverstone College aims to support students from diverse backgrounds who are pursuing degrees in social sciences.",
+      "stipend": 900,
+      "postDate": "2025-02-20",
+      "service_charge": 18
+    },
+    {
+      "university_name": "Royal University of Science",
+      "university_image": "https://i.ibb.co.com/Nd5gSGBr/oceania-global-university-img.jpg",
+      "scholarship_category": "Research-based",
+      "universityLocation": {
+        "country": "Germany",
+        "city": "Berlin"
+      },
+      "application_deadline": "2025-09-10",
+      "subject_category": "Physics",
+      "application_fees": 70,
+      "rating": 4.8,
+      "scholarship_description": "Royal University of Science offers research-based scholarships for students focusing on advanced research in physics. The scholarship includes research funding and mentorship.",
+      "stipend": 1500,
+      "postDate": "2025-02-25",
+      "service_charge": 25
+    },
+    {
+      "university_name": "Sunrise Academy",
+      "university_image": "https://i.ibb.co.com/nNBP4Gg4/middle-east-university-img.jpg",
+      "scholarship_category": "Innovation",
+      "university_location": {
+        "country": "India",
+        "city": "Bangalore"
+      },
+      "application_deadline": "2025-10-01",
+      "subject_category": "Business Administration",
+      "application_fees": 45,
+      "rating": 4.6,
+      "scholarship_description": "Sunrise Academy offers innovation scholarships to students with exceptional business ideas and entrepreneurship skills. The scholarship promotes innovative thinking in business administration.",
+      "stipend": 1100,
+      "postDate": "2025-03-05",
+      "service_charge": 22
+    }
+  ]
+  

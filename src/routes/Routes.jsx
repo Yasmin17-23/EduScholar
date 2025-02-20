@@ -3,20 +3,31 @@ import Main from "../layouts/Main";
 import Home from "../pages/Home/Home";
 import SignUp from "../pages/SignUp/SignUp";
 import Login from "../pages/Login/Login";
+import AllScholarship from "../pages/AllScholarship/AllScholarship";
+import ScholarshipDetails from "../pages/ScholarshipDetails/ScholarshipDetails";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <Main></Main>,
-        children: [
-            {
-                path: '/',
-                element: <Home></Home>
-            }
-        ]
-    },
-    { path: '/login', element: <Login/> },
-    { path: '/signup', element: <SignUp/> }
-])
+  {
+    path: "/",
+    element: <Main></Main>,
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>
+      },
+      {
+        path: "/scholarship/:id",
+        element: <PrivateRoute><ScholarshipDetails/></PrivateRoute>
+      },
+      {
+        path: "/all-scholarship",
+        element: <AllScholarship/>
+      },
+    ],
+  },
+  { path: "/login", element: <Login /> },
+  { path: "/signup", element: <SignUp /> },
+]);
 
 export default router;
