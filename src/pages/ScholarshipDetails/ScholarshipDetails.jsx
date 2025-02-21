@@ -14,7 +14,7 @@ const ScholarshipDetails = () => {
   const {
     data: scholarship = {},
     isLoading,
-    refetch,
+  
   } = useQuery({
     queryKey: ["scholarship", id],
     queryFn: async () => {
@@ -27,7 +27,7 @@ const ScholarshipDetails = () => {
   return (
     <div className="md:my-8 md:px-8">
       <div className="my-3">
-        <h2 className="text-3xl font-bold text-red-400/80">
+        <h2 className="text-xl md:text-3xl font-bold text-red-400/80">
           {scholarship.university_name}
         </h2>
         <span>

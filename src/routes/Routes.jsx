@@ -6,11 +6,13 @@ import Login from "../pages/Login/Login";
 import AllScholarship from "../pages/AllScholarship/AllScholarship";
 import ScholarshipDetails from "../pages/ScholarshipDetails/ScholarshipDetails";
 import PrivateRoute from "./PrivateRoute";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Main></Main>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
