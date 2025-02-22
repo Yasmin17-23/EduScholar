@@ -2,14 +2,17 @@ import PropTypes from "prop-types";
 import { createContext, useEffect, useState } from "react"
 import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { app } from '../firebase/firebase.config'
+import axios from "axios";
 
 export const AuthContext = createContext(null);
 const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 
+
 const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
+    
 
     const createUser = (email, password) => {
         setLoading(true);
@@ -33,6 +36,15 @@ const AuthProvider = ({ children }) => {
         })
     }
 
+    //Get token from server
+    //const getToken = async email => {
+    //    const { data } = await axios.post(`${import.meta.env.VITE_API_URL}`, 
+    //        { email },
+    //        { withCredentials: true }
+    //    )
+    //    return data;
+    //}
+
     const logOut = () => {
         setLoading(true);
         return signOut(auth);
@@ -42,11 +54,23 @@ const AuthProvider = ({ children }) => {
         const unsubscribe = onAuthStateChanged(auth, currentUser => {
             console.log('current user in state', currentUser);
             setUser(currentUser);
+             if(currentUser){
+                const userInfo = { email: currentUser.email };
+                axios.post(`${import.meta.env.VITE_API_URL}/jwt`, { userInfo })
+                  .then(res => {
+                     if(res.data.token){
+                        localStorage.setItem('token-access', res.data.token)
+                     }
+                  })
+             }
+             else {
+                localStorage.removeItem('token-access')
+             }
             setLoading(false);
         })
 
         return () => {
-            unsubscribe()
+           return unsubscribe()
         }
     }, [])
 
