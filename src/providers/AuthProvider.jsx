@@ -36,14 +36,16 @@ const AuthProvider = ({ children }) => {
         })
     }
 
-    //Get token from server
-    //const getToken = async email => {
-    //    const { data } = await axios.post(`${import.meta.env.VITE_API_URL}`, 
-    //        { email },
-    //        { withCredentials: true }
-    //    )
-    //    return data;
-    //}
+    //save user
+    const saveUser = async user => {
+        const currentUser = {
+            email: user?.email,
+            role: '',
+            status: 'Verified',
+        }
+        const { data } = await axios.post(`${import.meta.env.VITE_API_URL}/user`, currentUser)
+        return data;
+    }
 
     const logOut = () => {
         setLoading(true);
@@ -60,6 +62,7 @@ const AuthProvider = ({ children }) => {
                   .then(res => {
                      if(res.data.token){
                         localStorage.setItem('token-access', res.data.token)
+                        saveUser(currentUser)
                      }
                   })
              }
