@@ -11,6 +11,12 @@ import DashboardLayout from "../layouts/DashboardLayout";
 import Profile from "../pages/Dashboard/Common/Profile";
 import MyApplication from "../pages/Dashboard/Common/Users/MyApplication";
 import MyReviews from "../pages/Dashboard/Common/Users/MyReviews";
+import AddScholarship from "../pages/Dashboard/Moderator/AddScholarship";
+import ManageScholarships from "../pages/Dashboard/Moderator/ManageScholarships";
+import AllReviews from "../pages/Dashboard/Moderator/AllReviews";
+import AppliedScholarship from "../pages/Dashboard/Moderator/AppliedScholarship";
+import ManageUsers from "../pages/Dashboard/Admin/ManageUsers";
+import ManageReview from "../pages/Dashboard/Admin/ManageReview";
 
 
 const router = createBrowserRouter([
@@ -50,6 +56,30 @@ const router = createBrowserRouter([
       {
         path: 'my-reviews',
         element: <MyReviews/>
+      },
+      {
+         path: 'add-scholarship',
+         element: <AddScholarship/>
+      },
+      {
+        path: 'manage-scholarships',
+        element: <ManageScholarships/>
+      },
+      {
+        path: 'all-reviews',
+        element: <AllReviews/>
+      },
+      {
+        path: 'applied-scholarship',
+        element: <AppliedScholarship/>
+      },
+      {
+        path: 'manage-users',
+        element: <ManageUsers/>
+      },
+      {
+        path: 'manage-reviews',
+        element: <ManageReview/>
       }
     ]
   }
